@@ -330,6 +330,9 @@ class StyledConv(nn.Module):
 
 
 class ToRGB(nn.Module):
+    """
+    conv+noise，对应stylegan2中block之间+B的部分
+    """
     def __init__(self, in_channel, style_dim, upsample=True, blur_kernel=[1, 3, 3, 1]):
         super().__init__()
 
